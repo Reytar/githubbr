@@ -1,0 +1,10 @@
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^user/(.*) /index.php?user=$1 [L]
+RewriteRule ^repo/(.*)/(.*) /index.php?owner=$1&repo=$2 [L]
+RewriteRule ^search(.*) /index.php [L]
+
+
